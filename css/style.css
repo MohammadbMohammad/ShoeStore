@@ -121,7 +121,7 @@ header {
 }
 
 
-/* Brands section */
+/* Brands  */
 .brands {
     background-color: #f0f0f0;
     padding: 20px;
@@ -150,7 +150,7 @@ header {
     background-color: #c9c1c1;
 }
 
-/* brand on smaller screens */
+/* brand on mobil */
 @media (max-width: 768px) {
     .brand-list {
         justify-content: flex-start;
@@ -192,7 +192,7 @@ footer {
     text-decoration: none;
 }
 
-/* to hide "Follow Us" and "Services" on mobile */
+/* her brukte jeg AI for å få bedre style melleom mobile å desktop skjermer  */ 
 @media (max-width: 768px) {
     .follow-us, .services {
         display: none;
@@ -208,7 +208,7 @@ footer {
     }
 }
 
-/* to align all sections on one line */
+
 @media (min-width: 769px) {
     .contact-info, .follow-us, .services {
         display: inline-block;
@@ -249,9 +249,6 @@ footer {
     font-weight: bold;
     color: #e74c3c;
 }
-
-
-
 
 
 
@@ -345,7 +342,7 @@ footer {
     background-color: #00b330;
 }
 
-/* Responsive option */
+/*  */
 @media (max-width: 768px) {
     .product-details {
         flex-direction: column;
@@ -365,7 +362,7 @@ footer {
     }
 }
 
-/* Style the delivery section */
+/* delivery section */
 .delivery {
     background-color: #f5f5f5;
     padding: 20px;
@@ -393,7 +390,7 @@ footer {
     color: #666;
 }
 
-/* Add a hover effect for list items */
+
 .delivery li:hover {
     color: #007bff;
     cursor: pointer;
