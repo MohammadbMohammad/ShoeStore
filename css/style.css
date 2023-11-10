@@ -3,9 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f0f0; 
-}
 
+}
 /* Mobile-first design  */
 header {
     background: linear-gradient(to right, #3a0c0c, #720000);
@@ -284,6 +283,7 @@ footer {
     font-size: 24px;
     margin: 0;
     margin-bottom: 10px;
+    
 }
 
 .product-info .description {
@@ -394,5 +394,40 @@ footer {
 .delivery li:hover {
     color: #007bff;
     cursor: pointer;
+}
+
+
+
+/* News Section */
+.news {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.news-item {
+    display: inline-block; /* Display articles in one line */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Design for News Section */
+@media (max-width: 768px) {
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item {
+        width: 100%;
+        display: block; /* Display articles in one column for small screens */
+    }
 }
 
