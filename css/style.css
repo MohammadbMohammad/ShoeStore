@@ -1,17 +1,15 @@
-
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
+   font-family: Arial, Helvetica, sans-serif;
 }
-/* Mobile-first design  */
+/* Mobile-first design */
 header {
     background: linear-gradient(to right, #3a0c0c, #720000);
     font-size: 0.5rem;
     color: #fff;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .header-content {
@@ -19,23 +17,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-.header-left, .header-center, .header-right {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
-    
-    margin-right: 10px; 
-
+    margin-right: 10px;
 }
+
 .home {
     margin-right: 5px;
     font-size: 20px;
 }
-
-
 .header-center i {
     font-size: 24px;
 }
@@ -43,63 +32,61 @@ header {
 .icons i {
     font-size: 26px;
     color: #fff;
-    margin-left: 20px; 
+    margin-left: 20px;
     cursor: pointer;
 }
 
-/* search box */
+/* Search box */
 .search-box {
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    background: #fff; 
+    background: #fff;
     border-radius: 25px;
     padding: 5px;
 }
 
 .search-container input {
-    flex: 1; 
+    flex: 1;
     border: none;
     padding: 10px;
-    border-radius: 25px; 
-    width: 50%; 
+    border-radius: 25px;
+    width: 50%;
 }
 
 .search-container i {
     font-size: 18px;
-    color: #3a0c0c; 
+    color: #3a0c0c;
 }
 
-/* Navigation  */
+/* Navigation */
 .navigation ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: inline; 
+    display: inline;
 }
 
 .navigation li {
-    display: inline; 
-    margin-right: 10px; 
+    display: inline;
+    margin-right: 10px;
 }
 
 .navigation a {
     text-decoration: none;
-    color: #b0adad; 
+    color: #b0adad;
     font-weight: bold;
     font-size: 16px;
 }
-
-
 /* About section */
 .about {
-    background-color: #353333; 
-    padding: 20px; 
-    text-align: center; 
+    background-color: #353333;
+    padding: 20px;
+    text-align: center;
 }
 
 .about-content {
@@ -119,8 +106,7 @@ header {
     height: auto;
 }
 
-
-/* Brands  */
+/* Brands */
 .brands {
     background-color: #f0f0f0;
     padding: 20px;
@@ -144,24 +130,25 @@ header {
     border: 3px solid #3a0c0c;
     border-radius: 50%;
     text-align: center;
-    margin:  20px; 
+    margin: 20px;
     font-weight: bold;
     background-color: #c9c1c1;
 }
 
-/* brand on mobil */
+/* Brand on mobile */
 @media (max-width: 768px) {
     .brand-list {
         justify-content: flex-start;
     }
+
     .brand-item {
         width: auto;
         padding: 20px;
-        margin: 20 10px; 
+        margin: 20 10px;
     }
 }
 
-/* footer */
+/* Footer */
 footer {
     background-color: #3a0c0c;
     color: #fff;
@@ -169,7 +156,9 @@ footer {
     padding: 20px;
 }
 
-.contact-info, .follow-us, .services {
+.contact-info,
+.follow-us,
+.services {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -191,31 +180,32 @@ footer {
     text-decoration: none;
 }
 
-/* here i have been use AI to get better view of products cards where it can workes both on mobile and desktop */ 
+/* Hide follow-us and services on mobile */
 @media (max-width: 768px) {
-    .follow-us, .services {
+    .follow-us,
+    .services {
         display: none;
     }
-    
+
     .social-icons {
         text-align: center;
     }
-    
+
     .social-icons a {
         display: inline-block;
         margin: 0 5px;
     }
 }
 
-
+/* Display contact-info, follow-us, and services on larger screens */
 @media (min-width: 769px) {
-    .contact-info, .follow-us, .services {
+    .contact-info,
+    .follow-us,
+    .services {
         display: inline-block;
-        margin-right: 70px; 
+        margin-right: 70px;
     }
 }
-
-
 .product-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -248,156 +238,6 @@ footer {
     font-weight: bold;
     color: #e74c3c;
 }
-
-
-
-
-/*  produktkort Side */
-.product-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 100%;
-}
-
-.product-image {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-}
-
-.product-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.product-info {
-    flex: 1;
-    padding: 0 10px;
-}
-
-.product-info h1 {
-    font-size: 24px;
-    margin: 0;
-    margin-bottom: 10px;
-    
-}
-
-.product-info .description {
-    font-size: 16px;
-}
-
-.product-info .price {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.size-color {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.size, .color {
-    flex: 1;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.size label, .color label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.size select, .color select {
-    width: 100%;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-
-.buttons {
-    margin-top: 20px;
-}
-
-.add-to-cart, .add-to-wishlist {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.add-to-cart:hover, .add-to-wishlist:hover {
-    background-color: #00b330;
-}
-
-/* produktkort.html on mobile */
-@media (max-width: 768px) {
-    .product-details {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .product-info {
-        padding: 0;
-    }
-
-    .size-color {
-        flex-direction: column;
-    }
-
-    .size, .color {
-        margin-right: 0;
-    }
-}
-
-/* delivery section in produktkort.html page */
-.delivery {
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.delivery h2 {
-    font-size: 24px;
-    margin: 0;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.delivery ul {
-    list-style: none;
-    padding: 0;
-}
-
-.delivery li {
-    font-size: 16px;
-    margin: 5px 0;
-    color: #666;
-}
-
-
-.delivery li:hover {
-    color: #007bff;
-    cursor: pointer;
-}
-
-
-
 /* News Section */
 .news {
     text-align: center;
@@ -405,18 +245,16 @@ footer {
 }
 
 .news-item {
-    display: inline-block; /* Display articles in one line */
+    display: inline-block;
     overflow: hidden;
     border: 1px solid #ddd;
     margin: 10px;
 }
-
 .news-item img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
 /* Responsive Design for News Section */
 @media (max-width: 768px) {
     .news {
@@ -427,7 +265,55 @@ footer {
 
     .news-item {
         width: 100%;
-        display: block; /* Display articles in one column for small screens */
+        display: block;
     }
 }
+/* footer */
+footer {
+    background-color: #3a0c0c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.contact-info, .follow-us, .services {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.social-icons a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* here i have been use AI to get better view of products cards where it can workes both on mobile and desktop */ 
+@media (max-width: 768px) {
+    .follow-us, .services {
+        display: none;
+    }
+    
+    .social-icons {
+        text-align: center;
+    }
+    
+    .social-icons a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+@media (min-width: 769px) {
+    .contact-info, .follow-us, .services {
+        display: inline-block;
+        margin-right: 70px; 
+    }
+}
+
 
