@@ -1,22 +1,22 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;                                                      /* Nullstill margin */
+    padding: 0;                                                     /* Nullstill padding */
+    font-family: Arial, Helvetica, sans-serif;                     /* skrifttypen for nettsiden */
 }
 
-/* Header Styles */
+
 header {
-    background: linear-gradient(to right, #3a0c0c, #720000);
+    background: linear-gradient(to right, #3a0c0c, #720000);        /* header bakgrunnsfarge */
     font-size: 0.5rem;
-    color: #fff;
-    padding: 30px;
+    color: #fff;                                                          /* Tekstfarge */
+    padding: 30px;                                                          /* (avstand) */
     text-align: center;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;                                                  /* (Flexbox) */
+    justify-content: space-between;                                 /* Plasser elementer med lik avstand mellom seg */
+    align-items: center;                                            /* Sentrer elementer */
 }
 
 .logo {
@@ -63,12 +63,12 @@ header {
     color: #3a0c0c;
 }
 
-/* Navigation Menu Styles */
+/* Navbar Navigasjonsmeny  */
 .navigation ul {
-    list-style: none;
+    list-style: none;   /* Fjern punkttegn for listen */
     padding: 0;
-    margin: 0;
-    display: inline;
+    margin: 0; 
+    display: inline;    
 }
 
 .navigation li {
@@ -83,7 +83,7 @@ header {
     font-size: 16px;
 }
 
-/* News Section Styles */
+/* News  */
 .news {
     text-align: center;
     margin: 20px 0;
@@ -102,7 +102,8 @@ header {
     display: block;
 }
 
-/* Product Card Styles */
+/* Produkter */
+/* for å få dem på passende måte  brukte jeg AI  */
 .product-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -136,7 +137,7 @@ header {
     color: #e74c3c;
 }
 
-/* About Section Styles */
+/* About  */
 .about {
     background-color: #353333;
     padding: 20px;
@@ -155,7 +156,7 @@ header {
     padding: 20px;
 }
 
-/* Brands Section Styles */
+/* Brands  */
 .brands {
     background-color: #f0f0f0;
     padding: 20px;
@@ -184,7 +185,7 @@ header {
     background-color: #c9c1c1;
 }
 
-/* Brand on mobile Styles */
+/* Brands on mobile  */
 @media (max-width: 768px) {
     .brand-list {
         justify-content: flex-start;
@@ -197,9 +198,9 @@ header {
     }
 }
 
-/* Footer Styles */
+/* Footer en del bruk av AI her , to hide services , follow us i mobile størelse og vise dem i desktop */
 footer {
-    background-color: #3a0c0c;
+    background: linear-gradient(to right, #3a0c0c, #720000);
     color: #fff;
     text-align: center;
 }
@@ -228,7 +229,7 @@ footer {
     text-decoration: none;
 }
 
-/* Hide follow-us and services on mobile */
+/* to Hide follow-us and services on mobile */
 @media (max-width: 768px) {
     .follow-us,
     .services {
@@ -245,7 +246,7 @@ footer {
     }
 }
 
-/* Display contact-info, follow-us, and services on larger screens */
+/* contact-info, follow-us, and services on larger screens */
 @media (min-width: 769px) {
     .contact-info,
     .follow-us,
@@ -255,102 +256,11 @@ footer {
     }
 }
 
-/* Your existing styles for the product page */
+/* =================  sport shoes produktkort side ============================================  */
 
-/* Media query for responsiveness */
-@media screen and (max-width: 600px) {
-    .product-details {
-      flex-direction: column;
-    }
-  
-    .product-image {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .product-info {
-      width: 100%;
-    }
-  
-    .size-color {
-      flex-direction: column;
-    }
-  
-    .size-color article {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    .buttons button {
-      width: 100%;
-     
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    
-    .similar-products {
-      margin-top: 30px;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-    
-    .product-card {
-      display: inline-block;
-      margin-right: 10px;
-      vertical-align: top;
-    }
-    
-    .product-card img {
-      width: 100%;
-      height: auto;
-    }
-  }
-  
-  /* Image carousel styles */
-  .product-image {
-    position: relative;
-  }
-  
-  .product-image img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  /* Similar products styles */
-  .similar-products {
-    margin-top: 30px;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  
-  .product-card {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: top;
-  }
-  
-  .product-card img {
-    width: 100%;
-    height: auto;
-  }
 
-  .product-details {
+/*  produktkort Side */
+.product-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -369,6 +279,7 @@ footer {
     max-width: 100%;
     height: auto;
 }
+
 
 .product-info {
     flex: 1;
@@ -417,12 +328,13 @@ footer {
     border-radius: 5px;
 }
 
+
 .buttons {
     margin-top: 20px;
 }
 
 .add-to-cart, .add-to-wishlist {
-    background-color: #007bff;
+    background-color: #12161a;
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
@@ -432,9 +344,6 @@ footer {
     margin-right: 10px;
 }
 
-.add-to-cart:hover, .add-to-wishlist:hover {
-    background-color: #00b330;
-}
 
 /* produktkort.html on mobile */
 @media (max-width: 768px) {
@@ -455,3 +364,4 @@ footer {
         margin-right: 0;
     }
 }
+

@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
-    <script src="https://kit.fontawesome.com/a17242afec.js" crossorigin="anonymous"></script>   <!-- to get icons from fontawesome  -->
-    <title>ShoeStore</title>
+    <script src="https://kit.fontawesome.com/a17242afec.js" crossorigin="anonymous"></script>  <!-- to get icons from fontawesome  https://fontawesome.com -->
+    <title>ShoeStore/Home</title>
 </head>
 <body>
     <header>
         <article class="header-content">
             <h1 class="logo">Logo</h1>
-            <h1 class="home">Home</h1>
+            <h2 class="home">Home</h2>
             <div class="icons">
                 <i class="fas fa-shopping-cart"></i>
                 <i class="fas fa-bars"></i>
             </div>
         </article>
         <article class="search-box">
+            <!-- siden det er article får warning om den må ha en h tagg-->
             <div class="search-container">
                 <input type="text" placeholder="Search">
                 <i class="fas fa-search"></i>
@@ -25,36 +26,36 @@
         </article>
         <nav class="navigation">
             <ul>
-                <li><a href="produkt.html">Products</a></li>
+                <li><a href="produkt.html">Products</a></li>   <!-- for å navigere produkt (products)  side  -->
                 <li><a href="#">New Collection</a></li>
                 <li><a href="#">Men</a></li>
                 <li><a href="#">Women</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Section for news or sales -->
+   
     <section class="news">
         <article class="news-item">
             <h2>Latest News</h2>
-            <img src="https://placehold.co/800x200?text=News" alt="News Image ">
+            <img src="https://placehold.co/800x200?text=News" alt="News Image ">  <!-- bilde fra https://placehold.co   -->
         </article>
     </section>
     <section class="news">
         <article class="news-item">
             <h2>Sales</h2>
-            <img src="https://placehold.co/800x200?text=Sales " alt="Sales Image ">
+            <img src="https://placehold.co/800x200?text=Sales " alt="Sales Image ">  <!-- bilde fra https://placehold.co   -->
         </article>
     </section>
     <main>
     <section class="products">
         <header class="products-header">
             <h2>Products</h2>
-            <a href="produkt.html">See All</a>
+            <a href="produkt.html">See All</a>   <!-- for å navigere produkt (products)  side  -->
         </header>
         <div class="product-card-container">
             <article class="product-card">
                 <img src="img/1.png" alt="Product Name">
-                <h3><a href="produktkort.html?productID=1">Sport Shoes</a></h3>
+                <h3><a href="produktkort.html?productID=1">Sport Shoes</a></h3>   <!-- bilde fra nette hvor jeg brukte https://www.remove.bg/  -->
                 <p>Product Description 1</p>
                 <span class="price">100.$</span>
             </article>
@@ -115,18 +116,17 @@
         <article class="follow-us">
             <h1>Follow Us</h1>
             <div class="social-icons">
-               <a href="#"><i class="fab fa-facebook"></i></a>
-               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-facebook"></i></a>             <!--  icon from fontawesome  https://fontawesome.com -->
+               <a href="#"><i class="fab fa-twitter"></i></a>              <!--  icon from fontawesome  https://fontawesome.com -->
                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </article>
         <article class="services">
             <h1>Our Services</h1>
             <ul>
-                <li>Shipping</li>
-                <li>Returns </li>
-                <li>24/7 Customer Support</li>
-                <li>Secure Payment</li>
+                <li>Returns and Refound </li>
+                <li>Support</li>
+                <li> Payment</li>
             </ul>
         </article>
     </footer>

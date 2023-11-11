@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoeStore</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
-    <script src="https://kit.fontawesome.com/a17242afec.js" crossorigin="anonymous"></script>  <!-- to get icons from fontawesome  -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file style.css -->
+    <script src="https://kit.fontawesome.com/a17242afec.js" crossorigin="anonymous"></script>  <!-- to get icons from fontawesome  https://fontawesome.com -->
+    <title>ShoeStore/Products</title>
 </head>
 <body>
     <header>
         <article class="header-content">
             <h1 class="logo"><a href="index.html">Logo</a></h1>  <!-- for å navigere forside (Home) side  -->
-            <h1 class="Products">Products</h1>
+            <h2 class="Products">Products</h2>
             <div class="icons">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart"></i>    <!--  icons from fontawesome  https://fontawesome.com/v4/icon/shopping-cart-->
                 <i class="fas fa-bars"></i>
             </div>
         </article>
         <div class="search-box">
+            
             <article class="search-container">
+                <h3>Search</h3>
                 <input type="text" placeholder="Search">
                 <i class="fas fa-search"></i>
             </article>
@@ -34,20 +36,20 @@
     </header>
     <section class="products">
         <header class="products-header">
-            <h2>Products</h2>
+            <h4>Products</h4>
             <a href="index.html">Back Home</a>
-            <!-- Inside the filters section -->
+            
         </header>
         <div class="product-card-container">
             <article class="product-card">
                 <img src="img/1.png" alt="Product Name">
-                <h3><a href="produktkort.html?productID=1">Sport Shoes</a></h3>
+                <h5><a href="produktkort.html?productID=1">Sport Shoes</a></h5>
                 <p>Product Description </p>
                 <span class="price">100.$</span>
             </article>
             <article class="product-card">
                 <img src="img/2.png" alt="Product Name"> <!-- bilde fra nette hvor jeg brukte https://www.remove.bg/  -->
-                <h3>Nike</h3>
+                <h6>Nike</h6>
                 <p>Product Description </p>
                 <span class="price">100.$</span>
             </article>
@@ -109,10 +111,9 @@
         <article class="services">
             <h1>Our Services</h1>
             <ul>
-                <li>Shipping</li>
-                <li>Returns </li>
-                <li>24/7 Customer Support</li>
-                <li>Secure Payment</li>
+                <li>Returns and Refound </li>
+                <li>Support</li>
+                <li> Payment</li>
             </ul>
         </article>
     </footer>
