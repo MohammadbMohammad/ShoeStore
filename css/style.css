@@ -1,14 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-   font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/* Mobile-first design */
+
+/* Header Styles */
 header {
     background: linear-gradient(to right, #3a0c0c, #720000);
     font-size: 0.5rem;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -17,16 +18,15 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     margin-right: 10px;
+    color: #f5f2f2;
 }
 
 .home {
     margin-right: 5px;
     font-size: 20px;
-}
-.header-center i {
-    font-size: 24px;
 }
 
 .icons i {
@@ -36,7 +36,7 @@ header {
     cursor: pointer;
 }
 
-/* Search box */
+/* Search Box Styles */
 .search-box {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -63,7 +63,7 @@ header {
     color: #3a0c0c;
 }
 
-/* Navigation */
+/* Navigation Menu Styles */
 .navigation ul {
     list-style: none;
     padding: 0;
@@ -82,7 +82,61 @@ header {
     font-weight: bold;
     font-size: 16px;
 }
-/* About section */
+
+/* News Section Styles */
+.news {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.news-item {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Product Card Styles */
+.product-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* About Section Styles */
 .about {
     background-color: #353333;
     padding: 20px;
@@ -101,12 +155,7 @@ header {
     padding: 20px;
 }
 
-.about-image img {
-    max-width: 50%;
-    height: auto;
-}
-
-/* Brands */
+/* Brands Section Styles */
 .brands {
     background-color: #f0f0f0;
     padding: 20px;
@@ -135,7 +184,7 @@ header {
     background-color: #c9c1c1;
 }
 
-/* Brand on mobile */
+/* Brand on mobile Styles */
 @media (max-width: 768px) {
     .brand-list {
         justify-content: flex-start;
@@ -148,12 +197,11 @@ header {
     }
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     background-color: #3a0c0c;
     color: #fff;
     text-align: center;
-    padding: 20px;
 }
 
 .contact-info,
@@ -206,114 +254,204 @@ footer {
         margin-right: 70px;
     }
 }
-.product-card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-}
 
-.product-card {
-    border: 1px solid #e0e0e0;
-    padding: 10px;
-    text-align: center;
-}
+/* Your existing styles for the product page */
 
-.product-card img {
-    max-width: 100%;
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .product-details {
+      flex-direction: column;
+    }
+  
+    .product-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .product-info {
+      width: 100%;
+    }
+  
+    .size-color {
+      flex-direction: column;
+    }
+  
+    .size-color article {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .buttons button {
+      width: 100%;
+     
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .similar-products {
+      margin-top: 30px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    
+    .product-card {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+    
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Image carousel styles */
+  .product-image {
+    position: relative;
+  }
+  
+  .product-image img {
+    width: 100%;
     height: auto;
-}
-
-.product-card h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.product-card p {
-    font-size: 1em;
-    margin: 5px 0;
-}
-
-.product-card .price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #e74c3c;
-}
-/* News Section */
-.news {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.news-item {
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Similar products styles */
+  .similar-products {
+    margin-top: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .product-card {
     display: inline-block;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    margin: 10px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
 }
-.news-item img {
+
+.product-image {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-image img {
     max-width: 100%;
     height: auto;
-    display: block;
 }
-/* Responsive Design for News Section */
-@media (max-width: 768px) {
-    .news {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .news-item {
-        width: 100%;
-        display: block;
-    }
+.product-info {
+    flex: 1;
+    padding: 0 10px;
 }
-/* footer */
-footer {
-    background-color: #3a0c0c;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-.contact-info, .follow-us, .services {
-    max-width: 600px;
-    margin: 0 auto;
-}
-.contact-info h3 {
+
+.product-info h1 {
     font-size: 24px;
+    margin: 0;
     margin-bottom: 10px;
 }
-.contact-info p {
+
+.product-info .description {
     font-size: 16px;
-    margin: 5px 0;
 }
-.social-icons a {
-    font-size: 24px;
+
+.product-info .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.size-color {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.size, .color {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.size label, .color label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.size select, .color select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.add-to-cart, .add-to-wishlist {
+    background-color: #007bff;
     color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-/* here i have been use AI to get better view of products cards where it can workes both on mobile and desktop */ 
+.add-to-cart:hover, .add-to-wishlist:hover {
+    background-color: #00b330;
+}
+
+/* produktkort.html on mobile */
 @media (max-width: 768px) {
-    .follow-us, .services {
-        display: none;
+    .product-details {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
-    .social-icons {
-        text-align: center;
+
+    .product-info {
+        padding: 0;
     }
-    
-    .social-icons a {
-        display: inline-block;
-        margin: 0 5px;
+
+    .size-color {
+        flex-direction: column;
+    }
+
+    .size, .color {
+        margin-right: 0;
     }
 }
-@media (min-width: 769px) {
-    .contact-info, .follow-us, .services {
-        display: inline-block;
-        margin-right: 70px; 
-    }
-}
-
-
