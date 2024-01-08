@@ -1,2 +1,2 @@
 # ShoeStore
-Webutvikling_Oblig3
+Webutvikling
